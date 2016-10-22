@@ -1,0 +1,300 @@
+@font-face {
+font-family: "OpenSans";
+src: url("../Font/Open Sans/OpenSans-Light.ttf")
+}
+
+*{
+	margin: 0;
+	padding: 0;
+        font-family: "OpenSans", Light;
+}
+
+body{
+	background-color: #fff;
+	width: auto;
+}
+
+#Bienvenida{
+    text-align: center;
+}
+
+header{
+	width: 100%;
+}
+
+.menu_bar{
+	display: none;
+}
+
+.menu_bar a{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Open sans;
+	font-weight: normal;
+	color: black;
+	display: block;
+	padding: 5px;
+}
+
+.hamburguer{
+	width: 45px;
+	height: 25px;
+	display: block;
+	padding: 2px;
+        float: left;
+}
+
+#nav{
+	/*Bordes redondeados*/
+    /*-webkit-border-radius:10px;/*Para chrome y Safari*/
+    /*-moz-border-radius:10px;/*Para Firefox*/
+    /*-o-border-radius:10px;/*Para Opera*/
+    /*border-radius:10px;/*El estandar por defecto*/
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));Para chrome y Safari*/
+    background-color: #ff9800;
+    overflow:hidden;
+    padding:2px;
+    width:70%;
+    left: 0;
+    right: 0;
+    display: block;
+    align-items: center;
+    vertical-align: middle;
+    margin: 20px auto;
+}
+
+#nav ul{
+    list-style:none;
+    margin:0 10px 0 10px;
+    padding:0;
+    vertical-align: middle;
+}
+
+#nav ul li{
+    /*Bordes redondeados*/
+/*    -webkit-border-radius:5px;Chrome y Safari
+    -moz-border-radius:5px;Firefox
+    -o-border-radius:5px;Opera
+    border-radius:5px;Estandar por defecto*/
+    float: left;
+    align-self: center;
+    font-family: Open sans;
+    font-size:20px;
+    font-weight: lighter;
+    margin-right:10px;
+    text-align:center;
+    vertical-align: middle;
+}
+
+#nav ul li:hover{
+    /*Degradado de fondo*/
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5722), to( #ffccbc));/*Chrome y Safari*/
+    /*background-image: -moz-linear-gradient(top center, #ff5722, #ffccbc);/*Firefox*/
+    /*background-image: -o-linear-gradient(top, #ff5722, #ffccbc);/*Opera*/
+    /*background-image: linear-gradient(top, #ff5722, #ffccbc); /*Estandar por defecto*/
+    background-color: #ff5722;
+
+    /*Sombras*/
+    /*-webkit-box-shadow:  1px -1px 0px #999;/*Chrome y Safari*/
+    /*-moz-box-shadow:  1px -1px 0px #999;/*Firefox*/
+    /*-o-box-shadow:  1px -1px 0px #999;/*Opera*/
+    /*box-shadow:  1px -1px 0px #999;/*Estandar por defecto*/
+    
+}
+
+#nav ul li a{
+    color: black;
+    padding:10px;
+    text-decoration:none;
+    /*Transiciones*/
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+}
+
+#nav ul li a:hover {
+    color:#000;
+}
+
+/*dar estilo al contenedor del pase de diapositivas en la página principal*/
+
+.diapositivas, .otroContenidoSesion, #otroContenido{
+	width: 50%;
+	height: 400px;
+	margin-top: 1%;
+	margin-left: 24%;
+	/*background-color: #ff9800;*/
+}
+
+.contenedor{
+	width: 100%;
+	margin-bottom: 60px;
+}
+
+/*Aplicando estilos al footer*/
+/*footer{
+	font-family: Open sans;
+    font-weight: lighter;
+	background-color: #ff9800;
+	bottom: 0;
+	left: 0;
+	margin-right: 0%;
+	margin-top: 1%;
+	width: 100%;
+	height: 50px;
+	display: block;
+	position: fixed;
+}*/
+
+/*Dando tamaño al icono de home*/
+#homeIcon, #rutaIcon, #mapaIcon, #infoIcon, #loginIcon{
+	width: 130px;
+	height: 43px;
+}
+
+/*Haciendo el menú adaptable a doispositivos moviles*/
+@media screen and (max-width: 920px){
+	header nav{
+		width: 80%;
+		height: 100%;
+		margin: 0;
+		left: -100%;
+		position: fixed;
+	}
+
+	header nav ul li{
+		display: block;
+		float: none;
+		border-bottom: 1px solid rgba(255,255,255,0.3);
+	}
+
+	.menu_bar{
+		display: block;
+		width: 100%;
+		background-color: #ff9800;
+	}
+
+	.menu_bar .bt_menu{
+		display: block;
+		padding: 20px;
+		text-decoration: none;
+	}
+
+	.menu_bar span{
+		float: right;
+	}
+
+	#homeIcon, #rutaIcon, #mapaIcon, #infoIcon, #loginIcon{
+		width: 100px;
+		height: 33px;
+	}
+
+	#Bienvenida{
+		text-align: center;
+		font-family: Open sans;
+	    font-weight: lighter;
+	    font-size: 20px;
+	}
+
+/*.contenedor{
+width: 100%;
+background-color: black;
+display: inline-block;
+}*/
+
+.diapositivas{
+	display: block;
+	left: 0;
+	top: 10px;
+	margin-left: 0;
+	width: 100%;
+}
+
+/*#imgsld{
+	width: 100%;
+}*/
+
+}
+
+@media screen and (min-width: 921px){
+	nav{
+		width: 70%;
+	}
+}
+
+#tblLogin tr td{
+	padding: 5px;
+	margin: 5px;
+}
+
+#usuariolog{
+    text-align: right;
+    font-family: Open sans;
+    font-weight: lighter;
+    padding-right: 15px;
+}
+
+#contenedorAnuncios{
+    font-family: Open sans;
+    font-weight: lighter;
+    padding-right: 15px;
+    
+}
+
+#tablaInfo{
+    border-collapse: collapse;
+}
+
+#tablaInfo th, #tablaInfo td{
+    border: 1px solid black;
+    padding: 7px;
+}
+
+#cuerpoTrazaRuta{
+    background-color: #ff9800;
+}
+
+fieldset{
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin: 30px;
+    padding: 10px;
+    font-family: Open sans;
+    font-weight: lighter;
+    padding-right: 15px;
+}
+
+legend{
+    font-family: Open sans;
+    font-weight: lighter;
+    padding-right: 15px;
+    font-weight: bold;
+}
+ 
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  
+  h1,h2,h3,select{
+      font-family: OpenSans;
+	    font-weight: lighter;
+  }
+  
+  nav img{
+      vertical-align: middle;
+      padding: 5px;
+  }
+  
+  /*Dar tamaño automatico a las imágenes del slider*/
+  .imgSlider{
+      width: 70em;
+      height: 30em;
+  }
