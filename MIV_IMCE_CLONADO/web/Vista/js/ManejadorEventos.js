@@ -7,12 +7,13 @@ $(document).ready(function () {
     //Inicializa elementos del framework necesarios
     $('.materialboxed').materialbox();
     //Iniciarlizar la función que nos muestra el slider
-    $('.bxslider').bxSlider({
-        infiniteLoop: true,
-        hideControlOnEnd: true,
-        mode: 'fade',
-        auto: true
-    });
+//    $('.bxslider').bxSlider({
+//        infiniteLoop: true,
+//        hideControlOnEnd: true,
+//        mode: 'fade',
+//        auto: true
+//    });
+     $('.slider').slider({full_width: true});
 
 });//Fin ready
 

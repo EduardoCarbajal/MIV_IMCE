@@ -1,10 +1,11 @@
 <%@page import="Modelo.Util" %>
 <header>
-    <h1 id="Bienvenida"><%= Util.BIENVENIDA_MIV %></h1>
+<!--    <h1 id="Bienvenida"><%= Util.BIENVENIDA_MIV %></h1>
 <div class="menu_bar">
     <a href="#" class="bt-menu"><span><img class="hamburguer" src="../img/hamburguer.png"></span>Menú</a>
-</div>
+</div>-->
 
+<div class="navbar-fixed">
 <nav id="nav">
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo"><%= Util.UNIVERSIDAD_SIGLAS %></a>
@@ -17,6 +18,7 @@
       </ul>
     </div>
   </nav>
+</div>
 
         
 <!--<nav>
@@ -34,12 +36,38 @@
 </header>
 <div id="contenedor" class="contenedor">
 <div class="diapositivas" id='diapositivas'>
-   <ul class="bxslider">
-        <li><img class="imgSlider" src="Vista/img/infoSlider3.png" alt="slider"></li>
-            <li><img class="imgSlider" src="Vista/img/infoSlider.png" alt="slider"></li>
-          <li><img class="imgSlider" src="Vista/img/infoSlider2.jpg" alt="slider"></li>
-          <li><img class="imgSlider" src="Vista/img/infoSlider4.jpg" alt="slider"></li>
-        </ul>
+   <div class="slider">
+    <ul class="slides">
+      <li>
+          <img src="Vista/img/infoSlider4.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Bienvenidos al Módulo de Información Virtual</h3>
+          <h5 class="light grey-text text-lighten-3">¡Esperemos disfrute su estancia aquí!</h5>
+        </div>
+      </li>
+      <li>
+          <img src="Vista/img/infoSlider.png"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Podrás trazar rutas</h3>
+          <h5 class="light grey-text text-lighten-3">Ubica lugares facilmente dentro de tu institución.</h5>
+        </div>
+      </li>
+      <li>
+          <img src="Vista/img/infoSlider2.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Podras consultar información importante</h3>
+          <h5 class="light grey-text text-lighten-3">Para que la información importante no vuelva a pasar desapercibida.</h5>
+        </div>
+      </li>
+      <li>
+          <img src="Vista/img/infoSlider3.png"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Podras consultar horarios y talleres</h3>
+          <h5 class="light grey-text text-lighten-3">Sabemos que los horarios son importantes para ti.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
     <div class="otroContenidoSesion" style='display: none;'>
 </div>

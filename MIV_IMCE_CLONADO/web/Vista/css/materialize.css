@@ -4176,7 +4176,6 @@ nav ul {
 nav ul li {
   transition: background-color .3s;
   float: left;
-  padding: 0;
 }
 
 nav ul li.active {
@@ -5073,7 +5072,7 @@ button.btn-floating {
 
 .dropdown-content li > a, .dropdown-content li > span {
   font-size: 16px;
-  color: #ff9800;
+  color: black;
   display: block;
   line-height: 22px;
   padding: 14px 16px;
@@ -6720,6 +6719,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav a.btn-floating {
   margin: 10px 15px;
+  color: black;
 }
 
 .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-floating {

@@ -8,5 +8,8 @@ $(document).ready( function(){
           //Evitar que se muestre el segundo contenedor en la página sesión
           $('.otroContenidoSesion').css('display','none');
            //Iniciarlizar la función que nos muestra el slider
+           
+           
+     $('.slider').slider({full_width: true});
           
     });
